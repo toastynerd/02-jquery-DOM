@@ -1,6 +1,6 @@
 'use strict';
 
-var rawData = [
+window.rawData = [
   {
     title:       'Bacon Ipsum',
     category:    'food',
