@@ -38,12 +38,12 @@ Article.prototype.toHtml = function() {
   return $newArticle;
 };
 
-rawData.sort(function(a,b) {
+window.rawData.sort(function(a,b) {
   // REVIEW: Take a look at this sort method; This may be the first time we've seen it.
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-rawData.forEach(function(articleObject) {
+window.rawData.forEach(function(articleObject) {
   // REVIEW: Take a look at this forEach method; This may be the first time we've seen it.
   articles.push(new Article(articleObject));
 });
